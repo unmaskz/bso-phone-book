@@ -1,0 +1,73 @@
+.directory {
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ededed;
+        margin-bottom: 5px;
+    }
+
+    &__heading {
+        font-size: 0.75rem;
+        color: #787878;
+        text-transform: uppercase;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+
+        .directory__contact:last-child {
+            .directory__content {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+        text-decoration: none;
+
+        &Name {
+            margin: 0;
+            color: #272E30;
+        }
+
+        &JobTitle {
+            font-size: 13px;
+            color: #787878;
+            margin: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 5px;
+    }
+
+    &__avatar {
+        display: flex;
+        align-items: flex-end;
+        height: 40px;
+        width: 40px;
+        background-color: #cdcdcd;
+        border-radius: 50%;
+        margin-right: 15px;
+        overflow: hidden;
+
+        &Image {
+            max-width: 100%;
+        }
+    }
+}

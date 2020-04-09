@@ -1,0 +1,42 @@
+@import '../../styles/config';
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+
+    &__tab {
+        display: flex;
+        flex-basis: 100%;
+        flex: 1;
+        align-content: center;
+        justify-content: center;
+        font-size: 15px;
+        border: 1px solid $color-brand;
+        border-right: 0;
+        background-color: $color-white;
+        color: $color-brand;
+        padding: 4px 8px;
+        transition: background-color 0.5s ease;
+
+        &:first-child {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-right: 1px solid $color-brand;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &___current {
+            background-color: $color-brand;
+            color: $color-white;
+        }
+    }
+}
